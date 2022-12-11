@@ -1,4 +1,6 @@
 ﻿
+using OOPsConcepts.Abstraction;
+using OOPsConcepts.Inheritance;
 using System;
 
 namespace OOPsConcepts
@@ -13,10 +15,15 @@ namespace OOPsConcepts
             switch (option)
             {
                 case 1://Inheritance
+                    Console.WriteLine("Performing Inheritance Operation");
                     Class2 c = new Class2();
                     c.method3();
                     break;
-                case 2:
+                case 2://Abstraction
+                    Console.WriteLine("Performing Abstraction Operation");
+                    DoAbstraction doAbstraction = new DoAbstraction();
+                    doAbstraction.FirstName();
+                    doAbstraction.LastName();
                     break;
                 default:
                     break;

@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPsConcepts
+namespace OOPsConcepts.Inheritance
 {
+
     public class Class1     // Parent class
     {
         public void Method1()
         {
             int a = 10, b = 20;
             Console.WriteLine("Running method 1 from Class1");
-            Console.WriteLine("Sum is = "+(a+b));
+            Console.WriteLine("Sum is = " + (a + b));
         }
         public void Method2()
         {
@@ -28,5 +30,10 @@ namespace OOPsConcepts
             c2.Method1();
             c2.Method2();
         }
+        public void DoAbstraction()
+        {
+
+        }
     }
+
 }
