@@ -1,6 +1,7 @@
 ﻿
 using OOPsConcepts.Abstraction;
 using OOPsConcepts.Inheritance;
+using OOPsConcepts.Interface;
 using System;
 
 namespace OOPsConcepts
@@ -10,7 +11,7 @@ namespace OOPsConcepts
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To OOPs concepts");
-            Console.WriteLine("Choose option \n1:Inheritance\n2:Abstraction\n");
+            Console.WriteLine("Choose option \n1:Inheritance\n2:Abstraction\n3:Interface\n4:Encapsulation\n");
             int option=int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -24,6 +25,13 @@ namespace OOPsConcepts
                     DoAbstraction doAbstraction = new DoAbstraction();
                     doAbstraction.FirstName();
                     doAbstraction.LastName();
+                    break;
+                case 3://Interface
+                    Console.WriteLine("Performing Interface Operation");
+                    DoInterface doInterface = new DoInterface();
+                    doInterface.FirstName();
+                    doInterface.LastName();
+                    doInterface.Adress();
                     break;
                 default:
                     break;
